@@ -36,7 +36,7 @@ const MainMenu = () => {
           </button>
         </div>
         <div>
-          <h1 className="text-xl-semi uppercase">Acme</h1>
+          <h1 className="text-xl-semi uppercase">Littoral Pêche</h1>
         </div>
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
@@ -53,7 +53,7 @@ const MainMenu = () => {
           >
             <Search size={24} />
             <span placeholder="Search products" className="text-base-regular">
-              Search products
+              Rechercher du matériels
             </span>
           </button>
         )}
@@ -67,8 +67,8 @@ const MainMenu = () => {
                     className="flex items-center justify-between w-full"
                     onClick={close}
                   >
-                    <span className="sr-only">Go to Store</span>
-                    <span>Store</span>
+                    <span className="sr-only">Allez à la boutique</span>
+                    <span>Boutique</span>
                     <ChevronDown className="-rotate-90" />
                   </button>
                 </a>
@@ -85,7 +85,7 @@ const MainMenu = () => {
                           onClick={close}
                         >
                           <span className="sr-only">
-                            Go to {collection.title} collection
+                            Allez vers {collection.title} les collections
                           </span>
                           <span>{collection.title}</span>
                           <ChevronDown className="-rotate-90" />
@@ -110,8 +110,8 @@ const MainMenu = () => {
                       className="flex items-center justify-between border-b border-gray-200 py-2 w-full"
                       onClick={close}
                     >
-                      <span className="sr-only">Go to sign in page</span>
-                      <span className="normal-case">Sign in</span>
+                      <span className="sr-only">Allez à la page d&apos;inscription</span>
+                      <span className="normal-case">S&apos;inscrire</span>
                       <ChevronDown className="-rotate-90" />
                     </button>
                   </a>
