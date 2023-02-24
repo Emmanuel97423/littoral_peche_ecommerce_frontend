@@ -4,7 +4,7 @@ import React from "react"
 const Help = () => {
   return (
     <div>
-      <h2 className="text-base-semi">Need help?</h2>
+      <h2 className="text-base-semi">Besoin d&apos;aide?</h2>
       <div className="text-base-regular my-2">
         <ul className="gap-y-2 flex flex-col">
           <li>
@@ -14,7 +14,7 @@ const Help = () => {
           </li>
           <li>
             <Link href="/contact">
-              <a>Returns & Exchanges</a>
+              <a>Retours & Echanges</a>
             </Link>
           </li>
         </ul>

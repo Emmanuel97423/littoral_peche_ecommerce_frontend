@@ -9,13 +9,13 @@ const NotFound: NextPageWithLayout = () => {
     <>
       <Head title="404" description="Something went wrong" />
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)]">
-        <h1 className="text-2xl-semi text-gry-900">Page not found</h1>
+        <h1 className="text-2xl-semi text-gry-900">Bredouille!</h1>
         <p className="text-small-regular text-gray-700">
-          The page you tried to access does not exist.
+          La page à laquelle vous avez essayé d&apos;accéder n&apos;existe pas.
         </p>
         <Link href="/">
           <a className="mt-4 underline text-base-regular text-gray-900">
-            Go to frontpage
+            Allez à la boutique
           </a>
         </Link>
       </div>

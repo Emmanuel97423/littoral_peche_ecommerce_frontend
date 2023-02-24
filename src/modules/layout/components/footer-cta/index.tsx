@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const FooterCTA = () => {
   return (
-    <div className="bg-blue-100 w-full">
+    <div className="bg-blue-100 w-full bg-[url('/hero.png')]">
       <div className="content-container flex flex-col-reverse gap-y-8 small:flex-row small:items-center justify-between py-16 relative">
         <div>
           <h3 className="text-2xl-semi">Evenement à venir</h3>

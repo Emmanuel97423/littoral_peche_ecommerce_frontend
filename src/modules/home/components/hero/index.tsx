@@ -3,8 +3,8 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] w-full relative">
-      <div className="w-2/3 text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-center small:items-start small:p-32">
+    <div className="h-[70vh] w-full relative bg-black">
+      <div className=" text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-center small:items-start small:p-32">
         <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black">
           Faites que chaque sortie pêche soit un succès avec les articles tendances, plébiscité par nos clients
         </h1>
@@ -17,14 +17,14 @@ const Hero = () => {
         <UnderlineLink href="/store">Explorer</UnderlineLink>
       </div>
       <Image
-        src="/hero.png"
+        src="/hero.jpg"
         layout="fill"
         loading="eager"
         priority={true}
         quality={90}
         objectFit="cover"
         alt="Photo hero"
-        className="absolute inset-0"
+        className="absolute inset-0 opacity-20"
         draggable="false"
       />
     </div>

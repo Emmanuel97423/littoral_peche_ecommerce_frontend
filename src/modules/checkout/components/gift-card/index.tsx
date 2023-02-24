@@ -71,7 +71,7 @@ const GiftCard: React.FC<GiftCardProps> = ({ cart }) => {
   return (
     <div className="w-full bg-white p-6 flex flex-col">
       <div className="mb-4">
-        <h3 className="text-base-semi">Gift Card</h3>
+        <h3 className="text-base-semi">Carte-cadeau</h3>
       </div>
       <div className="text-small-regular">
         {appliedGiftCard ? (
@@ -87,7 +87,7 @@ const GiftCard: React.FC<GiftCardProps> = ({ cart }) => {
                 disabled={isLoading}
               >
                 <Trash size={16} />
-                <span className="sr-only">Remove gift card from order</span>
+                <span className="sr-only">Supprimer la carte-cadeau de la commander</span>
               </button>
             </div>
           </div>
@@ -97,7 +97,7 @@ const GiftCard: React.FC<GiftCardProps> = ({ cart }) => {
               <Input
                 label="Code"
                 {...register("gift_card_code", {
-                  required: "Code is required",
+                  required: "Code requis",
                 })}
                 errors={errors}
                 touched={touchedFields}
@@ -108,7 +108,7 @@ const GiftCard: React.FC<GiftCardProps> = ({ cart }) => {
                   disabled={isLoading}
                   isLoading={isLoading}
                 >
-                  Apply
+                  Activer
                 </Button>
               </div>
             </div>

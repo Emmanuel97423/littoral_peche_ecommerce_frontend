@@ -16,12 +16,14 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
     useProductActions()
 
   const price = useProductPrice({ id: product.id, variantId: variant?.id })
+  console.log('price:', price)
 
   const selectedPrice = useMemo(() => {
     const { variantPrice, cheapestPrice } = price
 
     return variantPrice || cheapestPrice || null
   }, [price])
+
 
   return (
     <div className="flex flex-col gap-y-2">
@@ -83,7 +85,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
       </div>
 
       <Button onClick={addToCart}>
-        {!inStock ? "Out of stock" : "Add to cart"}
+        {!inStock ? "Rupture" : "Ajouter au panier"}
       </Button>
     </div>
   )
