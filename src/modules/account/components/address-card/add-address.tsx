@@ -89,53 +89,53 @@ const AddAddress: React.FC = () => {
         className="border border-gray-200 p-5 min-h-[220px] h-full w-full flex flex-col justify-between"
         onClick={open}
       >
-        <span className="text-base-semi">New address</span>
+        <span className="text-base-semi">Nouvelle adresse</span>
         <Plus size={24} />
       </button>
 
       <Modal isOpen={state} close={handleClose}>
-        <Modal.Title>Add address</Modal.Title>
+        <Modal.Title>Ajouter une adresse</Modal.Title>
         <Modal.Body>
           <div className="grid grid-cols-1 gap-y-2">
             <div className="grid grid-cols-2 gap-x-2">
               <Input
-                label="First name"
+                label="Nom"
                 {...register("first_name", {
-                  required: "First name is required",
+                  required: "Nom requis",
                 })}
                 required
                 errors={errors}
                 autoComplete="given-name"
               />
               <Input
-                label="Last name"
+                label="Prénom"
                 {...register("last_name", {
-                  required: "Last name is required",
+                  required: "Prénom requis",
                 })}
                 required
                 errors={errors}
                 autoComplete="family-name"
               />
             </div>
-            <Input label="Company" {...register("company")} errors={errors} />
+            <Input label="Entreprise" {...register("company")} errors={errors} />
             <Input
-              label="Address"
+              label="Adresse"
               {...register("address_1", {
-                required: "Address is required",
+                required: "Adresse requis",
               })}
               required
               errors={errors}
               autoComplete="address-line1"
             />
             <Input
-              label="Apartment, suite, etc."
+              label="Appartement, suite, etc."
               {...register("address_2")}
               errors={errors}
               autoComplete="address-line2"
             />
             <div className="grid grid-cols-[144px_1fr] gap-x-2">
               <Input
-                label="Postal code"
+                label="Code postal"
                 {...register("postal_code", {
                   required: "Postal code is required",
                 })}
@@ -144,9 +144,9 @@ const AddAddress: React.FC = () => {
                 autoComplete="postal-code"
               />
               <Input
-                label="City"
+                label="Ville"
                 {...register("city", {
-                  required: "City is required",
+                  required: "Ville requise",
                 })}
                 errors={errors}
                 required
@@ -154,7 +154,7 @@ const AddAddress: React.FC = () => {
               />
             </div>
             <Input
-              label="Province / State"
+              label="Pays"
               {...register("province")}
               errors={errors}
               autoComplete="address-level1"
@@ -164,7 +164,7 @@ const AddAddress: React.FC = () => {
               autoComplete="country"
             />
             <Input
-              label="Phone"
+              label="Tél"
               {...register("phone")}
               errors={errors}
               autoComplete="phone"
@@ -179,10 +179,10 @@ const AddAddress: React.FC = () => {
             className="!bg-gray-200 !text-gray-900 !border-gray-200 min-h-0"
             onClick={handleClose}
           >
-            Cancel
+            Annuler
           </Button>
           <Button className="min-h-0" onClick={submit} disabled={submitting}>
-            Save
+            Enregistrer
             {submitting && <Spinner />}
           </Button>
         </Modal.Footer>

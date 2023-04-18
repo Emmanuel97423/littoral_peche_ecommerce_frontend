@@ -82,9 +82,9 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
       className="w-full"
     >
       <AccountInfo
-        label="Password"
+        label="Mot de passe"
         currentInfo={
-          <span>The password is not shown for security reasons</span>
+          <span>Le mot de passe n&apos;est pas affiché pour des raisons de sécurité</span>
         }
         isLoading={isLoading}
         isSuccess={isSuccess}
@@ -94,7 +94,7 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
       >
         <div className="grid grid-cols-2 gap-4">
           <Input
-            label="Old password"
+            label="Ancien mot de passe"
             {...register("old_password", {
               required: true,
             })}
@@ -102,13 +102,13 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
             errors={errors}
           />
           <Input
-            label="New password"
+            label="Nouveau mot de passe"
             type="password"
             {...register("new_password", { required: true })}
             errors={errors}
           />
           <Input
-            label="Confirm password"
+            label="Confirmer le mot de passe"
             type="password"
             {...register("confirm_password", { required: true })}
             errors={errors}
